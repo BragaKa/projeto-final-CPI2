@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestor de Tarefas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>
+      <img src="img/pergaminho.png" id="img-2" alt="ícone de pergaminho">
+      Sistema de Gestão de Tarefas
+    </h1>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main>
+
+    <!-- Formulário de Nova Tarefa -->
+    <form id="formTarefa">
+      <input type="text" id="nomeTarefa" placeholder="Digite a tarefa" required />
+      <select id="prioridade">
+        <option value="baixa">Baixa</option>
+        <option value="media">Média</option>
+        <option value="alta">Alta</option>
+      </select>
+      <button type="submit">Adicionar Tarefa</button>
+    </form>
+
+    <!--  Lista de Tarefas -->
+    <ul id="listaTarefas"></ul>
+
+    <!--  Botão para Limpar Lista -->
+    <div class="botoes-controle">
+      <button id="limparLista">Limpar Lista</button>
+    </div>
+
+  </main>
+
+  <!--  Rodapé -->
+  <footer>
+    <p>
+      Desenvolvido por
+      <a href="https://github.com/BragaKa" target="_blank">Kamila Braga</a> e
+      <a href="https://github.com/RafaelNSO" target="_blank">Rafael Nunes</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
